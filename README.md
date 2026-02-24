@@ -1,4 +1,4 @@
-# zho.rt
+# ZHO.RT
 
 ZHO.RT is a fast, minimal URL zhortener. Paste your long URL, get a zhort one instantly. Powered by the [clc.is](https://clc.is/api) public API.
 
@@ -38,12 +38,16 @@ The app uses the **clc.is** public API — no auth required.
 
 **Request body:**
 ```json
-{ "url": "https://your-long-url.com" }
+{
+  "domain": "clc.is",
+  "target_url": "https://publicapis.io/alternatives/tly-url-shortner-api",
+  "expired_hours": 0 // optional (0 = no expiration)
+}
 ```
 
 **Response:**
 ```json
-{ "urlEncurtada": "https://clc.is/9Gb4L" }
+{ "url": "https://clc.is/9Gb4L" }
 ```
 
 Returns HTTP `200` for successful zhortens
@@ -54,7 +58,7 @@ zho.rt-web/
 ├── app/
 │   ├── components/
 │   │   ├── Navbar.tsx         # Top bar with theme toggle
-│   │   ├── ZhortenForm.tsx    # URL input + result card
+│   │   ├── ShortenForm.tsx    # URL input + result card
 │   │   ├── HistoryPanel.tsx   # localStorage history list
 │   │   └── ThemeScript.tsx    # Flash-prevention inline script
 │   ├── lib/
