@@ -7,7 +7,7 @@ A clean, minimal Next.js frontend powered by the [clc.is](https://clc.is/api) pu
 - **Tailwind CSS** · **Lucide React**
 
 ## Features
-- ✂️ Paste any URL → short link instantly via `api.encurtador.dev`
+- ✂️ Paste any URL → short link instantly via `clc.is/api/links`
 - 🌞 Bright theme by default with **dark/light toggle** (no flash)
 - 🕐 Recent links history stored in `localStorage`
 - 📋 One-click copy · 🔗 Open in new tab · 🗑️ Delete history entries
