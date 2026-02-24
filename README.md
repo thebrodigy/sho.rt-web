@@ -3,7 +3,7 @@
 A clean, minimal Next.js frontend powered by the [urlshort.dev](https://www.urlshort.dev) public API.
 
 ## Stack
-- **Next.js 14** (App Router) · **React 18** · **TypeScript**
+- **Next.js 16** · **React 19** · **TypeScript**
 - **Tailwind CSS** · **Lucide React**
 
 ## Features
