@@ -4,7 +4,7 @@ import { HistoryPanel } from './components/HistoryPanel'
 
 export default function Home() {
   return (
-    <main style={{ background: 'var(--bg)', minHeight: '100vh' }}>
+    <main style={{ display: 'flex', flexDirection: 'column', background: 'var(--bg)', minHeight: '100vh' }}>
       <Navbar />
       <div
         className="overflow-hidden"
@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="px-6 pt-12 pb-10">
+      <section className="px-6 pt-12 pb-10" style={{flex: 1}}>
         <div className="max-w-4xl mx-auto">
           <div className="mb-10 animate-fade-up">
             <div className="flex items-center gap-4 mb-4">
@@ -169,7 +169,7 @@ export default function Home() {
             SHO<span style={{ color: 'var(--accent)' }}>.RT</span>
           </span>
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'var(--text-muted)', letterSpacing: '1px' }}>
-            POWERED BY URLSHORT.DEV
+            POWERED BY CLC.IS
           </span>
           <a
             href="https://github.com/thebrodigy/sho.rt-web"
