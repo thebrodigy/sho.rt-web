@@ -1,13 +1,13 @@
-# sho.rt
+# zho.rt
 
-A clean, minimal Next.js frontend powered by the [clc.is](https://clc.is/api) public API.
+ZHO.RT is a fast, minimal URL zhortener. Paste your long URL, get a zhort one instantly. Powered by the [clc.is](https://clc.is/api) public API.
 
 ## Stack
 - **Next.js 16** · **React 19** · **TypeScript**
 - **Tailwind CSS** · **Lucide React**
 
 ## Features
-- ✂️ Paste any URL → short link instantly via `clc.is/api/links`
+- ✂️ Paste any URL → zhort link instantly via `clc.is/api/links`
 - 🌞 Bright theme by default with **dark/light toggle** (no flash)
 - 🕐 Recent links history stored in `localStorage`
 - 📋 One-click copy · 🔗 Open in new tab · 🗑️ Delete history entries
@@ -34,7 +34,7 @@ The app uses the **clc.is** public API — no auth required.
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `POST` | `https://clc.is/api/links` | Shorten a URL |
+| `POST` | `https://clc.is/api/links` | Zhorten a URL |
 
 **Request body:**
 ```json
@@ -46,19 +46,19 @@ The app uses the **clc.is** public API — no auth required.
 { "urlEncurtada": "https://clc.is/9Gb4L" }
 ```
 
-Returns HTTP `200` for successful shortens
+Returns HTTP `200` for successful zhortens
 
 ## Project Structure
 ```
-sho.rt-web/
+zho.rt-web/
 ├── app/
 │   ├── components/
 │   │   ├── Navbar.tsx         # Top bar with theme toggle
-│   │   ├── ShortenForm.tsx    # URL input + result card
+│   │   ├── ZhortenForm.tsx    # URL input + result card
 │   │   ├── HistoryPanel.tsx   # localStorage history list
 │   │   └── ThemeScript.tsx    # Flash-prevention inline script
 │   ├── lib/
-│   │   ├── api.ts             # urlshort.dev API call
+│   │   ├── api.ts             # clc.is API call
 │   │   └── useTheme.ts        # Dark/light mode hook
 │   ├── globals.css            # Tailwind + CSS variables + fonts
 │   ├── layout.tsx

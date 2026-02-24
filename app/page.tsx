@@ -27,7 +27,7 @@ export default function Home() {
               gap: '40px',
               display: 'flex',
             }}>
-              <span>✂ SHORTEN ANY URL</span>
+              <span>✂ ZHORTEN ANY URL</span>
               <span>★ 100% FREE</span>
               <span>✂ NO SIGNUP NEEDED</span>
               <span>★ LINKS NEVER EXPIRE</span>
@@ -51,7 +51,7 @@ export default function Home() {
                 color: 'var(--text-muted)',
                 textTransform: 'uppercase',
               }}>
-                URL SHORTENER
+                URL ZHORTENER
               </span>
             </div>
 
@@ -70,7 +70,7 @@ export default function Home() {
                 WebkitTextStroke: '3px var(--text-primary)',
                 color: 'transparent',
               }}>
-                IT SHORT
+                IT ZHORT
               </span>
             </h1>
 
@@ -89,7 +89,7 @@ export default function Home() {
                 lineHeight: 1.6,
                 marginBottom: '16px',
               }}>
-                Paste any URL. Get a short one. No account, no tracking, no nonsense.
+                Paste any URL. Get a zhort one. No account, no tracking, no nonsense.
               </p>
               <div className="flex flex-col gap-2">
                 {[
@@ -176,7 +176,7 @@ export default function Home() {
             POWERED BY CLC.IS
           </span>
           <a
-            href="https://github.com/thebrodigy/sho.rt-web"
+            href="https://github.com/thebrodigy/zho.rt-web"
             target="_blank"
             rel="noopener noreferrer"
             style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'var(--accent)', letterSpacing: '1px', textDecoration: 'underline' }}

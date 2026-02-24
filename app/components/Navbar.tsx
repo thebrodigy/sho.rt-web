@@ -34,7 +34,7 @@ export function Navbar() {
             textTransform: 'uppercase',
             lineHeight: 1,
           }}>
-            SHO<span style={{ color: 'var(--accent)' }}>.RT</span>
+            ZHO<span style={{ color: 'var(--accent)' }}>.RT</span>
           </span>
         </div>
         <div className="flex items-center gap-3">
