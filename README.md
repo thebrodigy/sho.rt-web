@@ -11,7 +11,6 @@ A clean, minimal Next.js frontend powered by the [urlshort.dev](https://www.urls
 - 🌞 Bright theme by default with **dark/light toggle** (no flash)
 - 🕐 Recent links history stored in `localStorage`
 - 📋 One-click copy · 🔗 Open in new tab · 🗑️ Delete history entries
-- 📄 OpenAPI 3.0 spec for the urlshort.dev API (`swagger.yaml`)
 
 ## Getting Started
 
@@ -27,15 +26,15 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-> No `.env` setup needed — the app calls the public `https://api.encurtador.dev` directly.
+> No `.env` setup needed — the app calls the public `https://clc.is` directly.
 
 ## API Reference
 
-The app uses the **urlshort.dev** public API — no auth required.
+The app uses the **clc.is** public API — no auth required.
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| `POST` | `https://api.encurtador.dev/encurtamentos` | Shorten a URL |
+| `POST` | `https://clc.is/api/links` | Shorten a URL |
 
 **Request body:**
 ```json
@@ -44,11 +43,10 @@ The app uses the **urlshort.dev** public API — no auth required.
 
 **Response:**
 ```json
-{ "urlEncurtada": "acesse.one/Og5Wz" }
+{ "urlEncurtada": "https://clc.is/9Gb4L" }
 ```
 
-Returns HTTP `201` for new links, `200` if the URL was already shortened.
-See `swagger.yaml` for the full OpenAPI 3.0 spec (paste at [editor.swagger.io](https://editor.swagger.io) to browse).
+Returns HTTP `200` for successful shortens
 
 ## Project Structure
 ```
@@ -65,7 +63,6 @@ short-frontend/
 │   ├── globals.css            # Tailwind + CSS variables + fonts
 │   ├── layout.tsx
 │   └── page.tsx
-├── swagger.yaml               # OpenAPI 3.0 spec for urlshort.dev
 ├── tailwind.config.js
 ├── next.config.js
 └── package.json
