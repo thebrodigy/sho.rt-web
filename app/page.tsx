@@ -170,7 +170,7 @@ export default function Home() {
       >
         <div className="max-w-4xl mx-auto flex items-center justify-between flex-wrap gap-3">
           <span style={{ fontFamily: 'var(--font-display)', fontSize: '18px', fontWeight: 900, color: 'var(--text-invert)', letterSpacing: '2px' }}>
-            SHO<span style={{ color: 'var(--accent)' }}>.RT</span>
+            ZHO<span style={{ color: 'var(--accent)' }}>.RT</span>
           </span>
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: '10px', color: 'var(--text-muted)', letterSpacing: '1px' }}>
             POWERED BY CLC.IS
