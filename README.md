@@ -1,6 +1,6 @@
-# sho.rt — Frontend
+# sho.rt
 
-A clean, minimal Next.js frontend powered by the [urlshort.dev](https://www.urlshort.dev) public API.
+A clean, minimal Next.js frontend powered by the [clc.is](https://www.clc.is) public API.
 
 ## Stack
 - **Next.js 16** · **React 19** · **TypeScript**
