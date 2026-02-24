@@ -1,7 +1,7 @@
 const API_ENDPOINT = '/api/shorten'
 
 interface RawShortenResponse {
-  urlEncurtada: string
+      url: string
 }
 
 export interface ShortenResponse {
@@ -22,10 +22,11 @@ export async function shortenUrl(url: string): Promise<ShortenResponse> {
     throw new Error(err?.message || `Error ${res.status}: ${res.statusText}`)
   }
 
-  const data: RawShortenResponse = await res.json()
+  const data: RawShortenResponse[] = await res.json()
+  console.log('Shorten API response:', data)
 
   return {
-    shortUrl: data.urlEncurtada,
+    shortUrl: data[0].url,
     originalUrl: url,
     createdAt: new Date().toISOString(),
   }

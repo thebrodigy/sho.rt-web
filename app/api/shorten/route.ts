@@ -8,10 +8,14 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ message: 'Missing or invalid URL' }, { status: 400 })
     }
 
-    const upstream = await fetch('https://api.encurtador.dev/encurtamentos', {
+    const upstream = await fetch('https://clc.is/api/links', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ url }),
+      body: JSON.stringify({
+        target_url: url,
+        domain: "clc.is",
+        expiration_hours: 0,
+  })
     })
 
     const data = await upstream.json()
