@@ -93,19 +93,23 @@ export default function Home() {
               </p>
               <div className="flex flex-col gap-2">
                 {[
-                  ['⚡︎', 'Under 50ms'],
+                  ['⚡', 'Under 50ms'],
                   ['∞', 'Never expires'],
                   ['★', 'Always free'],
                 ].map(([icon, label]) => (
-                  <div key={label} className="flex items-center gap-2">
+                  <div key={label} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <span style={{
                       fontFamily: 'var(--font-display)',
-                      fontSize: '16px',
+                      fontSize: '18px',
                       fontWeight: 900,
                       color: 'var(--accent)',
                       textShadow: '-1px 1px 0 var(--border)',
+                      width: '22px',
+                      textAlign: 'center',
+                      flexShrink: 0,
+                      lineHeight: 1,
                     }}>{icon}</span>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: 'var(--text-secondary)', letterSpacing: '1px' }}>
+                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '11px', color: 'var(--text-secondary)', letterSpacing: '1px', lineHeight: 1 }}>
                       {label}
                     </span>
                   </div>
