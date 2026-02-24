@@ -1,6 +1,6 @@
 # sho.rt
 
-A clean, minimal Next.js frontend powered by the [clc.is](https://www.clc.is) public API.
+A clean, minimal Next.js frontend powered by the [clc.is](https://clc.is/api) public API.
 
 ## Stack
 - **Next.js 16** · **React 19** · **TypeScript**
