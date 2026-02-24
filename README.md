@@ -50,7 +50,7 @@ Returns HTTP `200` for successful shortens
 
 ## Project Structure
 ```
-short-frontend/
+sho.rt-web/
 ├── app/
 │   ├── components/
 │   │   ├── Navbar.tsx         # Top bar with theme toggle

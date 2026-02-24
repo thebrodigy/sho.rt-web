@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900;1,900&family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900;1,900&family=Space+Mono:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap');
 
 :root {
   --font-display: 'Barlow Condensed', sans-serif;
@@ -10,8 +10,8 @@
   --font-body: 'DM Sans', sans-serif;
 
   /* Light (default) */
-  --bg: #F2F0E8;
-  --bg-card: #FAFAF5;
+  --bg: #E1D9D1;
+  --bg-card: #E1D9D1;
   --bg-invert: #141414;
   --border: #141414;
   --text-primary: #141414;
